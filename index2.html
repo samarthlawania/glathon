@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            max-width: 40%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .product-specs {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .cpu-specs {
+            display: none;
+            padding-top: 10px;
+        }
+
+        .view-more-button {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 3px;
+            margin-bottom: 20px;
+            padding-right: 0%;
+            border: 1px solid #ccc;
+        }
+        td img{
+            display: block;
+            margin: 0 auto;   
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td:last-child {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            /* Responsive Styles */
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            th {
+                display: block;
+                text-align: centre;
+                width: 10%;
+            }
+            td {
+                display: block;
+                text-align: left;
+                width: 10%;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        }
+    </style>
+    <title>Product Comparison</title>
+</head>
+<body>
+    <!-- HTML Structure -->
+    <main>
+        <div class="product-container">
+            <!-- Product Image -->
+            <img src="cpu.png" alt="Product Image" class="product-image" style="height: 24rem;">
+    
+            <!-- Product Specifications -->
+            <div class="product-specs">
+                <h2>Product Specifications</h2>
+                <hr>
+                <p>Processor Make: Intel</p>
+                <p>Processor Generation: 12</p>
+                <p>Price: Rs. 8750</p>
+                <p>Color: Black</p>
+                <p>Size: Medium</p>
+                <!-- CPU Specifications initially hidden -->
+                <div class="cpu-specs">
+                    <p>Processor: Intel Core i5-10700K</p>
+                    <p>Clock Speed: 3.8 GHz (Turbo Boost up to 5.1 GHz)</p>
+                    <p>Type of Drives used to populate the Internal Bays: HDD, SSD</p>
+                    <p>LED Backlit Monitor Size (INCHES): 23.8</p>
+                </div>
+                <!-- "View More" and "View Less" buttons -->
+                <div class="view-more-button" onclick="toggleCpuSpecs()">View More</div>
+            </div>
+        </div>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Price (In Indian rupees)</th>
+                    <th>Availability</th>
+                    <!-- <th>Rating on that platform</th> -->
+                    <th>Price Difference</th> <!-- Change the last column header -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GeM</td>
+                    <td>8750</td>
+                    <td>In Stock</td>
+                    <!-- <td></td> -->
+                    <td></td> <!-- Add an empty cell for the Price Difference -->
+                </tr>
+                <tr>
+                    <td><img src="https://d372i0x0rvq68a.cloudfront.net/seller_logos/Amazon.in/Seller-Logo.png" alt=""></td>
+                    <td>11000</td>
+                    <td>In Stock</td>
+                    <!-- <td><i class="fas fa-star"></i></td> -->
+                    <td>Rs. 2250</td> <!-- Add the Price Difference -->
+                </tr>
+                <tr>
+                    <td><img src="https://d372i0x0rvq68a.cloudfront.net/seller_logos/Flipkart.com/Seller-Logo.png" alt=""></td>
+                    <td>12000</td>
+                    <td>In Stock</td>
+                    <!-- <td><i class="fas fa-star-half-alt"></i></td> -->
+                    <td>Rs. 3250</td> <!-- Add the Price Difference -->
+                </tr>
+                <tr>
+                    <td><img src="https://d372i0x0rvq68a.cloudfront.net/seller_logos/Reliancedigital.in/Seller-Logo.png" alt=""></td>
+                    <td>9000</td>
+                    <td>Out of Stock</td>
+                    <!-- <td></td> -->
+                    <td>Rs.84555</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <header>
+
+        </header>
+        <main>
+
+        </main>
+        <footer class="bg-white">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SIH</title>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+
+</main>
+<footer class="bg-white">
+    <div class="mx-auto w-full px-12 py-6 ">
+          <div class="grid grid-cols-6 gap-4 "> 
+              <div class="col-span-1">
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">WEB INFO</h2>
+                  <ul class="text-gray-400  font-medium text-xs">
+                     <li class="mb-2">
+                        <a href="#" class="hover:underline">Terms of Use</a>
+                      </li>
+                     <li class="mb-2">
+                        <a href="#" class="hover:underline">Website Policies</a>
+                      </li>
+                     <li class="mb-2">
+                        <a href="#" class="hover:underline">Document Help</a>
+                      </li>
+                     <li class="mb-2">
+                        <a href="#" class="hover:underline">Sitemap</a>
+                      </li>
+                     <li class="mb-2">
+                        <a href="#" class="hover:underline">Web Information Manager</a>
+                      </li>
+
+                  </ul>
+              </div>
+            
+              <div class="col-span-1">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">ABOUT GeM</h2>
+                <ul class="text-gray-400 font-medium text-xs">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Introduction to GeM</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Statistics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Right to Information</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Analytics</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">New on GeM</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">BRAND GeM</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-span-1">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">NEWS & EVENTS</h2>
+                <ul class="text-gray-400 font-medium text-xs">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Newsroom</a>
+                    </lis=>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Gallery</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Notifications</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">CCM Schedule</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Forums</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">TESTIMONIALS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">RESOURCES</h2>
+                <ul class="text-gray-400 font-medium text-xs">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">GeM Handbook</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">OM’s/Circulars</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Terms and Conditions</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Policies/Manuals</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Miscellaneous</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">MOU'S</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">RESOURCES</h2>
+                <ul class="text-gray-400 font-medium text-xs">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">GeM Handbook</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">OM’s/Circulars</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Terms and Conditions</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Policies/Manuals</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Miscellaneous</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">MOU'S</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-1">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">NEED HELP ?</h2>
+                <ul class="text-gray-400 font-medium text-xs">
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">FAQs</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Feedback</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Raise a Ticket</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Contact Us</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            
+          </div>
+      </div>
+      <div class="flex gap-4 p-2 items-center justify-center bg-gray-500">
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/dept-commerce.png?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/msme-min.png?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/gst-min1-min.png?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/makeinindia.png?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/gem-india.jpg?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/upload/shared_doc/cppp-tendars-v1_1681300626.png?version=20230317112333" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/images/comodo_secure_seal.png?version=20200629095434" alt="">
+        </div>
+        <div>
+            <img src="https://assets-bg.gem.gov.in/resources/upload/shared_doc/stqc1_1651680670.png?version=20221021153550" alt="">
+        </div>
+      </div>
+      <div class="flex items-center gap-6 justify-center">
+          <div class="text-sm text-gray-400 ">© 2021 GeM All rights reserved</div>
+          <div class="text-sm text-gray-400 ">Site operated and maintained by Managed Service Provider</div>
+       <div class="flex space-x-4 p-4">
+    <a href="#">
+        <img src="https://assets-bg.gem.gov.in/resources/images/twitters.svg" alt="Facebook Icon" class="w-6 h-6">
+    </a>
+
+    <a href="#">
+        <img src="https://assets-bg.gem.gov.in/resources/images/facebook-icons.svg" alt="Twitter Icon" class="w-6 h-6">
+    </a>
+    <a href="#">
+        <img src="https://assets-bg.gem.gov.in/resources/images/youtube_new-gem.svg" alt="YouTube Icon" class="w-6 h-6">
+    </a>
+
+    <a href="#">
+        <img src="https://assets-bg.gem.gov.in/resources/images/inc-v1.svg" alt="YouTube Icon" class="w-6 h-6">
+    </a>
+
+    <a href="#">
+        <img src="https://assets-bg.gem.gov.in/resources/images/slideshare.svg" alt="LinkedIn Icon" class="w-6 h-6">
+    </a>
+
+    <a href="#">
+        <img src="https://mkp.gem.gov.in/img/shrd/html_widget_images/51/16/877/ad93706fc313c_kooapp.png.999xx.png" alt="Koko Icon" class="w-6 h-6">
+    </a>
+</div>
+
+        
+      </div>
+    </div>
+</footer>
+</body>
+</html>
+        </footer>
+    </main>
+    
+    <script>
+        function toggleCpuSpecs() {
+            const cpuSpecs = document.querySelector('.cpu-specs');
+            const viewMoreButton = document.querySelector('.view-more-button');
+
+            if (cpuSpecs.style.display === 'none' || cpuSpecs.style.display === '') {
+                cpuSpecs.style.display = 'block';
+                viewMoreButton.textContent = 'View Less';
+            } else {
+                cpuSpecs.style.display = 'none';
+                viewMoreButton.textContent = 'View More';
+            }
+        }
+    </script>
+</body>
+</html>
